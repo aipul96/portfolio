@@ -2,6 +2,10 @@ body {
   background-color: #a19f84;
   color: black;
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+}
 .folioImg {
   height: 410px;
   background-image: url("../images/header.jpg");
@@ -13,11 +17,11 @@ body {
   align-items: center;
 }
 .imgs {
-  height: 400px;
-  width: 400px;
-
+  height: 200px;
+  width: 200px;
+margin-top: 10%;
   border-radius: 50%;
-  background-size: cover;
+
 }
 
 .mypart {
@@ -44,10 +48,19 @@ body {
 }
 
 .projectitems {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
   background-color: green;
   margin: 18px 5% 15px 5%;
 }
-
+.projectitems .lamp {
+  height: 500px;
+  display: block;
+  width: 50px;
+  margin: 5px 5px;
+  background: #a19f84;
+}
 .fomsection {
   display: flex;
   flex-direction: column;
@@ -120,6 +133,7 @@ body {
 }
 .detailskill {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
 }
@@ -255,4 +269,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width:400) {
+.imgs {
+  height: 39px;
+  width: 29px;
+}
+.myname {
+  color: black;
+}
 }
